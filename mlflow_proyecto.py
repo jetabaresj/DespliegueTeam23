@@ -8,6 +8,8 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 import mlflow
 import mlflow.sklearn
 
+mlflow.set_tracking_uri("http://localhost:5000") 
+
 url = "https://raw.githubusercontent.com/jetabaresj/DespliegueTeam23/refs/heads/main/data/heart_failure_clinical_records_dataset.csv"
 data = pd.read_csv(url)
 
