@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Esteb/Desktop/Universidad/DespliegueSoluciones/DespliegueTeam23/mlruns/0/4602c684ae324bdd9f07760998098342/artifacts
+end_time: 1731254884253
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4602c684ae324bdd9f07760998098342
+run_name: Random Forest
+run_uuid: 4602c684ae324bdd9f07760998098342
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731254880580
+status: 3
+tags: []
+user_id: Esteb

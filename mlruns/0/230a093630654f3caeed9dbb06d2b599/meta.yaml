@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Esteb/Desktop/Universidad/DespliegueSoluciones/DespliegueTeam23/mlruns/0/230a093630654f3caeed9dbb06d2b599/artifacts
+end_time: 1731253965066
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 230a093630654f3caeed9dbb06d2b599
+run_name: Logistic Regression
+run_uuid: 230a093630654f3caeed9dbb06d2b599
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731253955919
+status: 3
+tags: []
+user_id: Esteb

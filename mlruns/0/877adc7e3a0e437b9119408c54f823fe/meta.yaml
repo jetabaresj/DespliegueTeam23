@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Esteb/Desktop/Universidad/DespliegueSoluciones/DespliegueTeam23/mlruns/0/877adc7e3a0e437b9119408c54f823fe/artifacts
+end_time: 1731255400233
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 877adc7e3a0e437b9119408c54f823fe
+run_name: Support Vector Machine
+run_uuid: 877adc7e3a0e437b9119408c54f823fe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731254884260
+status: 4
+tags: []
+user_id: Esteb
