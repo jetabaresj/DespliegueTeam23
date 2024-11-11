@@ -339,7 +339,7 @@ class DashboardUI:
     def run_server(self, debug: bool = False):
         """Iniciar el servidor de la aplicación."""
         try:
-            self.app.run(debug=debug)
+            self.app.run(debug=debug, host="0.0.0.0")
         except Exception as e:
             logger.error(f"Error al iniciar el servidor: {str(e)}")
             raise
@@ -347,8 +347,8 @@ class DashboardUI:
 if __name__ == '__main__':
     try:
         predictor = HeartFailurePredictor(
-            data_path='data/heart_failure_clinical_records_dataset.csv',
-            model_path='model.pkl'
+            data_path="https://raw.githubusercontent.com/jetabaresj/DespliegueTeam23/refs/heads/main/data/heart_failure_clinical_records_dataset.csv",
+            model_path="model.pkl"
         )
         dashboard = DashboardUI(predictor)
         dashboard.run_server(debug=True)
