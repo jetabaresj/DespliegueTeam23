@@ -13,6 +13,16 @@ mlflow.set_tracking_uri("http://localhost:8050")
 url = "https://raw.githubusercontent.com/jetabaresj/DespliegueTeam23/refs/heads/main/data/heart_failure_clinical_records_dataset.csv"
 data = pd.read_csv(url)
 
+
+binary_vars = ['smoking', 'anaemia', 'high_blood_pressure', 'diabetes', 'sex']
+mortality_rates = {}
+
+for var in binary_vars:
+    mortality_rate = data.groupby(var)['DEATH_EVENT'].mean()
+    mortality_rates[var] = mortality_rate.to_dict()
+
+mortality_rates["base_rate"] = data['DEATH_EVENT'].mean()
+
 X = data.drop('DEATH_EVENT', axis=1)
 y = data['DEATH_EVENT']
 
