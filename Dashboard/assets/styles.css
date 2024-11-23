@@ -1,0 +1,153 @@
+:root {
+    --bg-primary: #1a1a2e;
+    --bg-secondary: #556694;
+    --bg-tertiary: #4b5b6e;
+    --accent-color: #e94560;
+    --text-primary: #ffffff;
+    --text-secondary: #b8b8b8;
+    --panel-radius: 12px;
+    --panel-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Estilos base */
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Container principal */
+.dashboard-container {
+    height: 100vh; /* Cambia min-height por height */
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-primary);
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--bg-tertiary);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0; /* Evita que el navbar se encoja */
+}
+
+.dashboard-title {
+    margin: 0;
+    font-size: 1.5rem;
+    color: var(--text-primary);
+}
+
+/* Contenido principal */
+.dashboard-content {
+    flex: 1; /* Toma el espacio restante */
+    padding: 2rem;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* Permite scroll solo en el contenido */
+}
+
+/* Filas */
+.dashboard-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Paneles */
+.dashboard-panel {
+    background-color: var(--bg-secondary);
+    border-radius: var(--panel-radius);
+    padding: 1.5rem;
+    box-shadow: var(--panel-shadow);
+    transition: transform 0.2s ease;
+}
+
+.dashboard-panel:hover {
+    transform: translateY(-2px);
+}
+
+.panel-title {
+    color: var(--text-primary);
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+}
+
+.panel-content {
+    margin-bottom: 2rem;
+}
+
+/* Dropdown personalizado */
+.input-field {
+    background-color: var(--bg-tertiary);
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.Select-control {
+    background-color: var(--bg-tertiary) !important;
+    border: 1px solid var(--accent-color) !important;
+    color: var(--text-primary) !important;
+}
+
+.Select-menu-outer {
+    background-color: var(--bg-tertiary) !important;
+    border: 1px solid var(--accent-color) !important;
+}
+
+.Select-option {
+    background-color: var(--bg-tertiary) !important;
+    color: var(--text-primary) !important;
+}
+
+.Select-option:hover {
+    background-color: var(--accent-color) !important;
+}
+
+/* Panel de información */
+.info-panel {
+    background-color: var(--bg-tertiary);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/* Gráficas */
+.js-plotly-plot {
+    background-color: transparent !important;
+}
+
+.plotly-graph-div {
+    margin-bottom: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .dashboard-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .dashboard-content {
+        padding: 1rem;
+    }
+    
+    .navbar {
+        padding: 1rem;
+    }
+    
+    .dashboard-title {
+        font-size: 1.2rem;
+    }
+}
