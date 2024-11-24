@@ -7,6 +7,7 @@ WORKDIR /app
 # Copia los archivos necesarios
 COPY api.py .
 COPY model.pkl .
+COPY requirements.txt 
 
 # Instala las dependencias necesarias
 RUN pip install --no-cache-dir -r requirements.txt
