@@ -10,7 +10,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
-API_URL = os.getenv("API_URL", "http://localhost:8000/api")
+API_URL = os.getenv("API_URL", "http://52.200.156.6:8000/api")
 
 class DashboardUI:
     def __init__(self):
