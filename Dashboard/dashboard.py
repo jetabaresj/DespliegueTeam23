@@ -11,6 +11,7 @@ logger = logging.getLogger(__name__)
 
 
 API_URL = os.getenv("API_URL", "http://52.200.156.6:8000/api")
+print(f"Connecting to API at: {API_URL}")
 
 class DashboardUI:
     def __init__(self):
